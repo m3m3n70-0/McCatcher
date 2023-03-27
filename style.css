@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+    touch-action: none;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+}
+
+body{
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#score, #missed{
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+#start-container p{
+    width: 100vw;
+}
+#Basket img{
+    width: 15vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 1vh;
+    left: 43vw;
+}
+.falling-image {
+    width: 50px;
+    position: absolute;
+}
+/* .scoreboard{
+    display: flex;
+    justify-content: space-evenly;
+} */
+.overlay{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ #start-container, #retry-container{
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+#start-container p, #retry-container p{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+a{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 11rem;
+    background-color: #ffbc0d;
+    border-radius: 4px;
+    padding: 0.8125rem 1.5625rem;
+    display: inline-block;
+    align-items: center;
+    color: #292929;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: none;
+}
